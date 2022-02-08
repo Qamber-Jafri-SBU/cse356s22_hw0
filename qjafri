@@ -1,0 +1,10 @@
+server {
+  listen 80;
+  listen [::]:80;
+    root /var/www/qjafri;
+      index hw0.html;
+        server_name _;
+location / {
+    try_files $uri $uri/ =404;
+  }
+}
